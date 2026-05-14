@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: linkguard-ai
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: OLLAMA_API_KEY
+        sync: false
