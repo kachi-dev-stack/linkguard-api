@@ -19,5 +19,8 @@ Thumbs.db
 .idea/
 
 # 
-train.ipynb
 dataset/
+train.ipynb
+add_manual_features.py
+merge_datasets.py
+linkguardai_cm.png
